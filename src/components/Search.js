@@ -20,7 +20,7 @@ const Search = () => {
             setResults(data.query.search);
         };
         
-        if (term && !results.lemgth) {
+        if (term && !results.length) {
             search();
         } else {
             const timeoutID = setTimeout(() => {
